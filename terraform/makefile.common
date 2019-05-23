@@ -7,7 +7,7 @@ GREEN	= \033[0;32m
 RED   = \033[0;31m
 NC    = \033[0m
 
-all: all: terraform/init terraform/validate terraform/plan terraform/apply deploy run-tests terraform/destroy ## run nit validate plan apply run-tests destroy
+all: terraform/init terraform/validate terraform/plan terraform/apply deploy run-tests terraform/destroy ## run init validate plan apply run-tests destroy
 	@echo "$(GREEN)✓ 'make all' has completed $(NC)\n"
 
 terraform/init: ## initial terraform setup
